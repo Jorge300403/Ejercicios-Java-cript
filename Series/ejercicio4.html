@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio 4</title>
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css" media="screen" />
+    </head>
+    <body>
+        <!--
+            function ejer4(numero){
+            var long = numero.length;
+            let arreglo = [];
+            let arreglo2 = [];
+            var mayor = -1;
+            for(i=0; i<long; i++){
+                arreglo.push(numero[i]);
+                if(parseInt(mayor) < parseInt(numero[i])){
+                    mayor = numero[i];
+                }
+            }
+
+            for(i=0; i<long; i++){
+                if(parseInt(arreglo[i]) == parseInt(mayor)){
+                    arreglo2.push(i+1);
+                }
+            }
+
+            document.getElementById("output_numero").innerHTML = "El mayor es: " + mayor + " y se encuentra en : [" + arreglo2 + "]";
+        }
+        -->
+        <script src="../JS/scripts.js"></script>
+       <div class="div_principal">
+        <nav>
+            <br/>
+            <h1 class="titulo_pagina">Ejercicios JS</h1>
+            <ul class="acorh">
+                <li><a href="../index.html">Inicio</a>
+                </li>
+                <li><a href="#">Condicionales</a>
+                    <ul>
+                      <li><a href="condicionalSimple.html">Condicional Simple</a></li>
+                      <li><a href="condicionalMultiple.html">Condicional Multiple</a></li>
+                      <li><a href="switch.html">Switch</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ciclos</a>
+                    <ul>
+                      <li><a href="for.html">For</a></li>
+                      <li><a href="while.html">While</a></li>
+                      <li><a href="do.html">Do-While</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Arreglos</a>
+                    <ul>
+                      <li><a href="bubble.html">Bubble Sort</a></li>
+                      <li><a href="insertion.html">Insertion Sort</a></li>
+                      <li><a href="selection.html">Selection Sort</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ejercicios</a>
+                <ul>
+                    <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+                    <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+                    <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+                    <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+                    <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+                    <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+                    <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+                    <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+            <div style="width: 2%; background-color: white;">
+            </div>
+            <main>
+                <center>
+                    <br/>
+                    <br/>
+                    <h1 class="titulo_ejercicio">Ejercicio 4</h1>
+                    <br />
+                    <br/>
+                    <p>
+                        Descripción: Leer una secuencia de n números almacenarlos en una arreglo 
+                        <br/>mostrar la posición donde se encuentras el mayor valor leido.
+                    </p>
+                    <br/><label for="input_numero">
+                        Ingrese su cadena de número: 
+                    </label>
+                    <input type="number" id="input_numero" name="input_numero" placeholder="numero" />
+                    <p id="output_numero" name="output_numero"></p>
+                    <input class="botones" type="button" id="btnEnter" name="btnEnter" value="Resultado" onclick="ejer4(input_numero.value)" />
+                </center>
+            </main>
+       </div>
+
+    </body>
+</html>

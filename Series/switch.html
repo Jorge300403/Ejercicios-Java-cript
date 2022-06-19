@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <title>If</title>
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css" media="screen" />
+    </head>
+    <body>
+        <!--
+            function condSwitch(nombre){
+                nombre = nombre.toUpperCase();
+                switch(nombre){
+                    case 'JORGE':
+                        document.getElementById("output_numero").innerHTML = "Hola Jorge!";
+                        break;
+                    case 'ALEXIS':
+                        document.getElementById("output_numero").innerHTML = "Hola Alexis!";
+                        break;
+                    case 'CESAR':
+                        document.getElementById("output_numero").innerHTML = "Hola Cesar!";
+                        break;
+                    case 'ALAN':
+                        document.getElementById("output_numero").innerHTML = "Hola Alan!";
+                        break;
+                    case 'DANIEL':
+                        document.getElementById("output_numero").innerHTML = "Hola Daniel!";
+                        break;
+                    case 'PEDRO':
+                        document.getElementById("output_numero").innerHTML = "Hola Pedro!";
+                        break;
+                    default:
+                        document.getElementById("output_numero").innerHTML = "Ese nombre no existe.";
+                }
+            }
+        -->
+        <script src="../JS/scripts.js"></script>
+       <div class="div_principal">
+        <nav>
+            <br/>
+            <h1 class="titulo_pagina">Ejercicios JS</h1>
+            <ul class="acorh">
+                <li><a href="../index.html">Inicio</a>
+                </li>
+                <li><a href="#">Condicionales</a>
+                    <ul>
+                      <li><a href="condicionalSimple.html">Condicional Simple</a></li>
+                      <li><a href="condicionalMultiple.html">Condicional Multiple</a></li>
+                      <li><a href="switch.html">Switch</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ciclos</a>
+                    <ul>
+                      <li><a href="for.html">For</a></li>
+                      <li><a href="while.html">While</a></li>
+                      <li><a href="do.html">Do-While</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Arreglos</a>
+                    <ul>
+                      <li><a href="bubble.html">Bubble Sort</a></li>
+                      <li><a href="insertion.html">Insertion Sort</a></li>
+                      <li><a href="selection.html">Selection Sort</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ejercicios</a>
+                <ul>
+                    <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+                    <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+                    <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+                    <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+                    <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+                    <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+                    <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+                    <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+            <div style="width: 2%; background-color: white;">
+            </div>
+            <main>
+                <center>
+                    <br/>
+                    <br/>
+                    <h1 class="titulo_ejercicio">Switch</h1>
+                    <br />
+                    <br/>
+                    <p>
+                        Descripción: Ingrese uno de los siguientes nombres y aparecera un saludo de bienvenida para ese nombre
+                        <br/>[JORGE, ALEXIS, CESAR, ALAN, JUAN, DANIEL, PEDRO]
+                    </p>
+                    <br/>
+                    <br/>
+                    <label for="input_numero1">
+                        Ingrese el nombre
+                    </label>
+                    <input type="text" id="input_numero1" name="input_numero1" placeholder="nombre" />
+                    <p id="output_numero" name="output_numero"></p>
+                    <input class="botones" type="button" id="btnEnter" name="btnEnter" value="Resultado" onclick="condSwitch(input_numero1.value,)" />
+                </center>
+            </main>
+       </div>
+
+    </body>
+</html>

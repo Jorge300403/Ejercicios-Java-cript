@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <title>Arreglos</title>
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css" media="screen" />
+    </head>
+    <body>
+        <!--
+            function selection(numero1){
+            var long = numero1.length;
+            let arreglo = [];
+            let digito = "";
+            let aux = "";
+            var i;
+            var posicion;
+            for(i=0; i<long; i++){
+                if(numero1[i] == ","){
+                    arreglo.push(digito);
+                    digito="";
+                }else{
+                    digito+=numero1[i];
+                }
+            }
+            let arreglo2 = arreglo;
+            for(i=0; i<arreglo2.length-1; i++){
+                posicion = i;
+                for(var j=i+1; j<arreglo2.length; j++){
+                    if(parseInt(arreglo2[j]) < parseInt(arreglo2[posicion])) posicion=j;
+                }
+                aux = arreglo2[i];
+                arreglo2[i] = arreglo2[posicion];
+                arreglo2[posicion] = aux;
+            }
+            document.getElementById("output_numero").innerHTML ="Arreglo ordenado [" + arreglo2 + "]";
+        }
+        -->
+        <script src="../JS/scripts.js"></script>
+       <div class="div_principal">
+        <nav>
+            <br/>
+            <h1 class="titulo_pagina">Ejercicios JS</h1>
+            <ul class="acorh">
+                <li><a href="../index.html">Inicio</a>
+                </li>
+                <li><a href="#">Condicionales</a>
+                    <ul>
+                      <li><a href="condicionalSimple.html">Condicional Simple</a></li>
+                      <li><a href="condicionalMultiple.html">Condicional Multiple</a></li>
+                      <li><a href="switch.html">Switch</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ciclos</a>
+                    <ul>
+                      <li><a href="for.html">For</a></li>
+                      <li><a href="while.html">While</a></li>
+                      <li><a href="do.html">Do-While</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Arreglos</a>
+                    <ul>
+                      <li><a href="bubble.html">Bubble Sort</a></li>
+                      <li><a href="insertion.html">Insertion Sort</a></li>
+                      <li><a href="selection.html">Selection Sort</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ejercicios</a>
+                <ul>
+                    <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+                    <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+                    <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+                    <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+                    <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+                    <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+                    <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+                    <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+            <div style="width: 2%; background-color: white;">
+            </div>
+            <main>
+                <center>
+                    <br/>
+                    <br/>
+                    <h1 class="titulo_ejercicio">Selection Sort</h1>
+                    <br />
+                    <br/>
+                    <p>
+                        Descripción: Dado una secuencia de números leídos y almacenados en un
+                        <br/>arreglo, ordenarlos por Selection Sort.
+                    </p>
+                    <br/>
+                    <label for="input_numero1">
+                        Ingrese su  matriz: 
+                    </label>
+                    <input type="text" id="input_numero1" name="input_numero1" placeholder="separa por coma y termine en coma" style="width: 25%;"/>
+                    <p id="output_numero" name="output_numero"></p>
+                    <input class="botones" type="button" id="btnEnter" name="btnEnter" value="Resultado" onclick="selection(input_numero1.value)" />
+                </center>
+            </main>
+       </div>
+
+    </body>
+</html>
